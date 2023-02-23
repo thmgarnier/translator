@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 
 # Project directory and output directory
-PROJECT_NAME = "input"
+INPUT_DIR = "input"
 OUTPUT_DIR = "output"
 
 # Define output language
@@ -18,7 +18,7 @@ translator = Translator()
 
 # Iterate over all files in the project directory
 def translate_html_files():
-    for root, dirs, files in os.walk(os.path.join(PROJECT_NAME)):
+    for root, dirs, files in os.walk(os.path.join(INPUT_DIR)):
         for file in files:
             if file.endswith('.html'):
                 # Read the HTML file and parse it with BeautifulSoup
@@ -50,7 +50,7 @@ def translate_html_files():
                 # Save the translated HTML file
                 try:
                     # Create the output directory with complete folder names
-                    output_dir = os.path.join(OUTPUT_DIR, os.path.relpath(root, PROJECT_NAME))
+                    output_dir = os.path.join(OUTPUT_DIR, os.path.relpath(root, INPUT_DIR))
                     # Create the output directory if it doesn't exist
                     os.makedirs(output_dir, exist_ok=True)
                     # Save the translated HTML file to the output directory
