@@ -1,1 +1,1 @@
-# translator
+# HTML files translator
