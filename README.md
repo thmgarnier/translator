@@ -1,4 +1,4 @@
-### HTML and EPUB Translator
+# HTML and EPUB Translator
 This Github repository contains two Python scripts for translating HTML and EPUB files using the Google Translate API.
 
 ## HTML Translator
