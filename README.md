@@ -1,5 +1,5 @@
 # HTML Translator
-The `html_translator.py` script iterates over all HTML files in the input directory, sets the language attribute of the html tag to the target language, and translates all text strings in the HTML file to the target language using the Google Translate API. The translated files are saved in the output directory.
+The `html_translator.py` script iterates over all HTML files in the input directory, sets the language attribute of the html tag to the target language, and translates all text strings in each HTML file using the Google Translate API. The translated files are saved in the output directory.
 
 ### Prerequisites
 - Python 3.7 or later
